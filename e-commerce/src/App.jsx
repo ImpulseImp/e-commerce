@@ -1,14 +1,17 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import Page from './components/Page/Page';
 import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0);
+const obj = [
+  { name: 'Impulse', age: 30, city: 'Minsk' },
+  { name: 'Bob', age: 45, city: 'USA' },
+  { name: 'Sam', age: 32, city: 'Paris' },
+];
 
+function App() {
   return (
     <div className='App'>
-      <h1>Hi Impulse</h1>
+      <Page item={obj} />
     </div>
   );
 }
