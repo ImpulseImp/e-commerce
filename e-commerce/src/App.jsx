@@ -32,7 +32,7 @@ const obj = [
 function App() {
   return (
     <div className='App'>
-      <Categories item={obj} />
+      <Categories category={obj} />
     </div>
   );
 }
