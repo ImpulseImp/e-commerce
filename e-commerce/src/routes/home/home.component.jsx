@@ -32,10 +32,11 @@ const obj = [
 const Home = () => {
   return (
     <div className='App'>
-      <Outlet />
       <Categories category={obj} />
     </div>
   );
 };
 
 export default Home;
+
+// <Outlet />
